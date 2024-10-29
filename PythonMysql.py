@@ -1,4 +1,4 @@
-#mi libreria tkinter que permitira hacer mi formulario
+#mi libreria tkinter que permitira hacer mi formulario 22
 import tkinter as tk 
 
 #importar los modulos restantes de tkinter
