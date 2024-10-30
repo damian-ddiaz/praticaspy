@@ -1,4 +1,4 @@
-#pip install mysql-connector-python
+#pip install mysql-connector-python mm
 import mysql.connector
 
 class Cconexion:
