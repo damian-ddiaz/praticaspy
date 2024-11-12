@@ -1,7 +1,7 @@
 from Conexion import *
 
-class CClientes:
-    def ingresarClientes(nombre,correo,clave,estatus):
+class Usuarios:
+    def ingresarUsuarios(nombre,correo,clave,estatus):
         try:
             cone = CConexion.ConexionBaseDeDatos()
             cursor = cone.cursor() 

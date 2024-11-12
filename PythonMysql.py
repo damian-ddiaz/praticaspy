@@ -10,6 +10,30 @@ from tkinter import messagebox
 
 class FormularioUsarios:
     def Formulario():
+        global base
+        base = None
+
+        global texBoxId
+        texBoxId = None
+
+        global texBoxNombre
+        texBoxNombre = None
+
+        global texBoxCorreo
+        texBoxCorreo = None
+
+        global texBoxClave
+        texBoxClave = None
+
+        global seleecionEtatus
+        seleecionEtatus = None
+
+        global groupBox
+        groupBox = None
+
+        global tree
+        tree = None
+    
         try:
             base =Tk()
             base.geometry("1200x300")
@@ -45,5 +69,29 @@ class FormularioUsarios:
             base.mainloop()
         except ValueError as error:
             print("Error al mostrar la interfaz, error: {}".format(error))
+
+    def guardarRegistros():
+
+        global texBoxNombre, texBoxCorreo, texBoxClave, seleecionEtatus
+
+        try:
+            if texBoxNombre is None or texBoxCorreo is None or texBoxClave is None or seleecionEtatus is None:
+                print("Los campos no estan Inicializados")
+
+            nombre  = texBoxNombre.get()
+            correo  = texBoxCorreo.get()
+            clave   = texBoxClave.get()
+            estatus = seleecionEtatus.get()
+
+            CUsuarios.ingresarUsuarios(nombre,correo,clave,estatus)
+            messagebox.showinfo("Informacion","Los datos fueron guardados")
+
+            #limpiamos los campos
+            texBoxNombre.delete(0,END)
+            texBoxCorreo.delete(0,END)
+            texBoxClave.delete(0,END)
+        
+        except ValueError as error:
+            print("Erroro al Ingresara datos {}".format(error))
                 
     Formulario()
