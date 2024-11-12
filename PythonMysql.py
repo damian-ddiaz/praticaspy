@@ -1,7 +1,7 @@
 #mi libreria tkinter que permitira hacer mi formulario 22
 import tkinter as tk 
 
-#importar los modulos restantes de tkinter
+#importar los modulos restantes de tkinter Damian Diaz Engelman
 
 from tkinter import *
 
@@ -63,8 +63,7 @@ class FormularioUsarios:
             combo = ttk.Combobox(groupBox,values=["Activo","Inactivo"],textvariable=seleecionEtatus)
             combo.grid(row=4,column=1)  
             seleecionEtatus.set("Activo")        
-            
-            
+                   
                 
             base.mainloop()
         except ValueError as error:
