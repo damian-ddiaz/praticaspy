@@ -1,7 +1,7 @@
 #mi libreria tkinter que permitira hacer mi formulario 22
 import tkinter as tk 
 
-#importar los modulos restantes de tkinter Damian Diaz desde en san jacinto
+#importar los modulos restantes de tkinter Damian Diaz desde en san jacinto vereda 4
 
 from tkinter import *
 
